@@ -1,4 +1,4 @@
-org.kreed.vanilla.Cache -> org.kreed.vanilla.a:
+com.nachiket.titan.Cache -> com.nachiket.titan.a:
     long[] mKeys -> a
     java.lang.Object[] mValues -> b
     int count() -> a
@@ -8,7 +8,7 @@ org.kreed.vanilla.Cache -> org.kreed.vanilla.a:
     java.lang.Object put(long,java.lang.Object) -> a
     long getPlaylist(android.content.ContentResolver,java.lang.String) -> a
     void deletePlaylist(android.content.ContentResolver,long) -> a
-org.kreed.vanilla.CoverBitmap -> org.kreed.vanilla.b:
+com.nachiket.titan.CoverBitmap -> com.nachiket.titan.b:
     int TEXT_SIZE -> a
     int TEXT_SIZE_BIG -> b
     int PADDING -> c
@@ -18,15 +18,15 @@ org.kreed.vanilla.CoverBitmap -> org.kreed.vanilla.b:
     android.graphics.Bitmap ARTIST_ICON -> g
     void loadTextSizes(android.content.Context) -> a
     void drawText(android.graphics.Canvas,java.lang.String,int,int,int,int,android.graphics.Paint) -> a
-    android.graphics.Bitmap createBitmap(android.content.Context,int,org.kreed.vanilla.Song,int,int,android.graphics.Bitmap) -> a
-org.kreed.vanilla.CoverView -> org.kreed.vanilla.CoverView:
+    android.graphics.Bitmap createBitmap(android.content.Context,int,com.nachiket.titan.Song,int,int,android.graphics.Bitmap) -> a
+com.nachiket.titan.CoverView -> com.nachiket.titan.CoverView:
     int sSnapVelocity -> a
     android.os.Handler mHandler -> b
     int mCoverStyle -> c
-    org.kreed.vanilla.CoverView$Callback mCallback -> d
-    org.kreed.vanilla.Song[] mSongs -> e
+    com.nachiket.titan.CoverView$Callback mCallback -> d
+    com.nachiket.titan.Song[] mSongs -> e
     android.graphics.Bitmap[] mBitmaps -> f
-    org.kreed.vanilla.Cache mBitmapCache -> g
+    com.nachiket.titan.Cache mBitmapCache -> g
     android.widget.Scroller mScroller -> h
     android.view.VelocityTracker mVelocityTracker -> i
     float mLastMotionX -> j
@@ -35,35 +35,35 @@ org.kreed.vanilla.CoverView -> org.kreed.vanilla.CoverView:
     float mStartY -> m
     int mTentativeCover -> n
     boolean mIgnoreNextUp -> o
-    void setup(android.os.Looper,org.kreed.vanilla.CoverView$Callback,int) -> a
+    void setup(android.os.Looper,com.nachiket.titan.CoverView$Callback,int) -> a
     void resetScroll() -> a
     void onSizeChanged(int,int,int,int) -> onSizeChanged
     void onDraw(android.graphics.Canvas) -> onDraw
     boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
     void computeScroll() -> computeScroll
-    void setSong(int,org.kreed.vanilla.Song) -> a
-    void querySongs(org.kreed.vanilla.PlaybackService) -> a
+    void setSong(int,com.nachiket.titan.Song) -> a
+    void querySongs(com.nachiket.titan.PlaybackService) -> a
     boolean handleMessage(android.os.Message) -> handleMessage
-org.kreed.vanilla.CoverView$Callback -> org.kreed.vanilla.c:
+com.nachiket.titan.CoverView$Callback -> com.nachiket.titan.c:
     void nextSong() -> a
     void previousSong() -> b
     void upSwipe() -> c
     void downSwipe() -> d
-org.kreed.vanilla.FourLongWidget -> org.kreed.vanilla.FourLongWidget:
+com.nachiket.titan.FourLongWidget -> com.nachiket.titan.FourLongWidget:
     boolean sEnabled -> a
     void onEnabled(android.content.Context) -> onEnabled
     void onDisabled(android.content.Context) -> onDisabled
     void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
     void checkEnabled(android.content.Context,android.appwidget.AppWidgetManager) -> a
-    void updateWidget(android.content.Context,android.appwidget.AppWidgetManager,org.kreed.vanilla.Song,int) -> a
-org.kreed.vanilla.FourSquareWidget -> org.kreed.vanilla.FourSquareWidget:
+    void updateWidget(android.content.Context,android.appwidget.AppWidgetManager,com.nachiket.titan.Song,int) -> a
+com.nachiket.titan.FourSquareWidget -> com.nachiket.titan.FourSquareWidget:
     boolean sEnabled -> a
     void onEnabled(android.content.Context) -> onEnabled
     void onDisabled(android.content.Context) -> onDisabled
     void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
     void checkEnabled(android.content.Context,android.appwidget.AppWidgetManager) -> a
-    void updateWidget(android.content.Context,android.appwidget.AppWidgetManager,org.kreed.vanilla.Song,int) -> a
-org.kreed.vanilla.FullPlaybackActivity -> org.kreed.vanilla.FullPlaybackActivity:
+    void updateWidget(android.content.Context,android.appwidget.AppWidgetManager,com.nachiket.titan.Song,int) -> a
+com.nachiket.titan.FullPlaybackActivity -> com.nachiket.titan.FullPlaybackActivity:
     android.os.Handler mUiHandler -> f
     android.widget.RelativeLayout mMessageOverlay -> g
     android.widget.TextView mOverlayText -> h
@@ -84,7 +84,7 @@ org.kreed.vanilla.FullPlaybackActivity -> org.kreed.vanilla.FullPlaybackActivity
     void onPause() -> onPause
     void showOverlayMessage(int) -> b
     void onStateChange(int,int) -> a
-    void onSongChange(org.kreed.vanilla.Song) -> a
+    void onSongChange(com.nachiket.titan.Song) -> a
     void setDuration(long) -> a
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
@@ -98,9 +98,9 @@ org.kreed.vanilla.FullPlaybackActivity -> org.kreed.vanilla.FullPlaybackActivity
     void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
     void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
     void performAction(int) -> a
-org.kreed.vanilla.FullPlaybackActivity$1 -> org.kreed.vanilla.d:
+com.nachiket.titan.FullPlaybackActivity$1 -> com.nachiket.titan.d:
     boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
-org.kreed.vanilla.IdlePreference -> org.kreed.vanilla.IdlePreference:
+com.nachiket.titan.IdlePreference -> com.nachiket.titan.IdlePreference:
     int MIN -> a
     int MAX -> b
     int mValue -> c
@@ -111,9 +111,9 @@ org.kreed.vanilla.IdlePreference -> org.kreed.vanilla.IdlePreference:
     void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
     void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
     void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
-org.kreed.vanilla.LaunchActivity -> org.kreed.vanilla.LaunchActivity:
+com.nachiket.titan.LaunchActivity -> com.nachiket.titan.LaunchActivity:
     void onCreate(android.os.Bundle) -> onCreate
-org.kreed.vanilla.LibraryActivity -> org.kreed.vanilla.LibraryActivity:
+com.nachiket.titan.LibraryActivity -> com.nachiket.titan.LibraryActivity:
     int[] modeForAction -> f
     android.widget.TabWidget mTabWidget -> g
     android.view.ViewGroup mLists -> h
@@ -129,13 +129,13 @@ org.kreed.vanilla.LibraryActivity -> org.kreed.vanilla.LibraryActivity:
     int mDefaultAction -> r
     int mLastAction -> s
     long mLastActedId -> t
-    org.kreed.vanilla.MediaAdapter[] mAdapters -> u
-    org.kreed.vanilla.MediaAdapter mArtistAdapter -> v
-    org.kreed.vanilla.MediaAdapter mAlbumAdapter -> w
-    org.kreed.vanilla.MediaAdapter mSongAdapter -> x
-    org.kreed.vanilla.MediaAdapter mPlaylistAdapter -> y
-    org.kreed.vanilla.MediaAdapter mGenreAdapter -> z
-    org.kreed.vanilla.MediaAdapter mCurrentAdapter -> A
+    com.nachiket.titan.MediaAdapter[] mAdapters -> u
+    com.nachiket.titan.MediaAdapter mArtistAdapter -> v
+    com.nachiket.titan.MediaAdapter mAlbumAdapter -> w
+    com.nachiket.titan.MediaAdapter mSongAdapter -> x
+    com.nachiket.titan.MediaAdapter mPlaylistAdapter -> y
+    com.nachiket.titan.MediaAdapter mGenreAdapter -> z
+    com.nachiket.titan.MediaAdapter mCurrentAdapter -> A
     android.database.ContentObserver mPlaylistObserver -> B
     boolean $assertionsDisabled -> C
     void onCreate(android.os.Bundle) -> onCreate
@@ -146,45 +146,45 @@ org.kreed.vanilla.LibraryActivity -> org.kreed.vanilla.LibraryActivity:
     void updateHeaders() -> g
     void pickSongs(android.content.Intent,int) -> a
     void expand(android.content.Intent) -> a
-    int setLimiter(org.kreed.vanilla.MediaAdapter$Limiter) -> a
+    int setLimiter(com.nachiket.titan.MediaAdapter$Limiter) -> a
     void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
     void afterTextChanged(android.text.Editable) -> afterTextChanged
     void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
     void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
     void updateLimiterViews() -> h
     void onClick(android.view.View) -> onClick
-    android.content.Intent createClickIntent(org.kreed.vanilla.MediaAdapter,org.kreed.vanilla.MediaView) -> a
-    org.kreed.vanilla.QueryTask buildQueryFromIntent(android.content.Intent,boolean) -> a
+    android.content.Intent createClickIntent(com.nachiket.titan.MediaAdapter,com.nachiket.titan.MediaView) -> a
+    com.nachiket.titan.QueryTask buildQueryFromIntent(android.content.Intent,boolean) -> a
     void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
     void addToPlaylist(long,android.content.Intent) -> a
     boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
-    org.kreed.vanilla.MediaAdapter setupView(int,int,boolean,boolean,org.kreed.vanilla.MediaAdapter$Limiter) -> a
+    com.nachiket.titan.MediaAdapter setupView(int,int,boolean,boolean,com.nachiket.titan.MediaAdapter$Limiter) -> a
     boolean handleMessage(android.os.Message) -> handleMessage
-    void runQuery(org.kreed.vanilla.MediaAdapter) -> a
+    void runQuery(com.nachiket.titan.MediaAdapter) -> a
     void onMediaChange() -> e
     void setSearchBoxVisible(boolean) -> a
-    void onSongChange(org.kreed.vanilla.Song) -> a
+    void onSongChange(com.nachiket.titan.Song) -> a
     void setCurrentTab(int) -> b
-    org.kreed.vanilla.MediaAdapter access$000(org.kreed.vanilla.LibraryActivity) -> a
-org.kreed.vanilla.LibraryActivity$1 -> org.kreed.vanilla.e:
-    org.kreed.vanilla.LibraryActivity this$0 -> a
+    com.nachiket.titan.MediaAdapter access$000(com.nachiket.titan.LibraryActivity) -> a
+com.nachiket.titan.LibraryActivity$1 -> com.nachiket.titan.e:
+    com.nachiket.titan.LibraryActivity this$0 -> a
     void onChange(boolean) -> onChange
-org.kreed.vanilla.LibraryActivity$2 -> org.kreed.vanilla.f:
-    org.kreed.vanilla.MediaAdapter val$adapter -> a
+com.nachiket.titan.LibraryActivity$2 -> com.nachiket.titan.f:
+    com.nachiket.titan.MediaAdapter val$adapter -> a
     android.database.Cursor val$cursor -> b
     void run() -> run
-org.kreed.vanilla.MediaAdapter -> org.kreed.vanilla.g:
-    org.kreed.vanilla.LibraryActivity mActivity -> a
+com.nachiket.titan.MediaAdapter -> com.nachiket.titan.g:
+    com.nachiket.titan.LibraryActivity mActivity -> a
     int mType -> b
     android.net.Uri mStore -> c
     java.lang.String[] mFields -> d
     java.lang.String[] mFieldKeys -> e
     boolean mExpandable -> f
-    org.kreed.vanilla.MediaAdapter$Limiter mLimiter -> g
+    com.nachiket.titan.MediaAdapter$Limiter mLimiter -> g
     java.lang.String mConstraint -> h
-    org.kreed.vanilla.MusicAlphabetIndexer mIndexer -> i
+    com.nachiket.titan.MusicAlphabetIndexer mIndexer -> i
     boolean mHasHeader -> j
     java.lang.String mHeaderText -> k
     int getCount() -> getCount
@@ -193,24 +193,24 @@ org.kreed.vanilla.MediaAdapter -> org.kreed.vanilla.g:
     android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
     void setHeaderText(java.lang.String) -> a
     void filter(java.lang.String) -> b
-    org.kreed.vanilla.QueryTask buildQuery(boolean) -> a
+    com.nachiket.titan.QueryTask buildQuery(boolean) -> a
     int getMediaType() -> a
-    void setLimiter(org.kreed.vanilla.MediaAdapter$Limiter) -> a
-    org.kreed.vanilla.MediaAdapter$Limiter getLimiter() -> b
-    org.kreed.vanilla.MediaAdapter$Limiter getLimiter(long) -> a
+    void setLimiter(com.nachiket.titan.MediaAdapter$Limiter) -> a
+    com.nachiket.titan.MediaAdapter$Limiter getLimiter() -> b
+    com.nachiket.titan.MediaAdapter$Limiter getLimiter(long) -> a
     void changeCursor(android.database.Cursor) -> changeCursor
     java.lang.Object[] getSections() -> getSections
     int getPositionForSection(int) -> getPositionForSection
     int getSectionForPosition(int) -> getSectionForPosition
     void bindView(android.view.View,android.content.Context,android.database.Cursor) -> bindView
     android.view.View newView(android.content.Context,android.database.Cursor,android.view.ViewGroup) -> newView
-org.kreed.vanilla.MediaAdapter$Limiter -> org.kreed.vanilla.h:
+com.nachiket.titan.MediaAdapter$Limiter -> com.nachiket.titan.h:
     java.lang.String[] names -> a
     long id -> b
     int type -> c
     java.lang.String selection -> d
-org.kreed.vanilla.MediaButtonHandler -> org.kreed.vanilla.i:
-    org.kreed.vanilla.MediaButtonHandler mInstance -> a
+com.nachiket.titan.MediaButtonHandler -> com.nachiket.titan.i:
+    com.nachiket.titan.MediaButtonHandler mInstance -> a
     int mUseControls -> b
     android.content.Context mContext -> c
     int mInCall -> d
@@ -220,7 +220,7 @@ org.kreed.vanilla.MediaButtonHandler -> org.kreed.vanilla.i:
     java.lang.reflect.Method mUnregisterMediaButtonEventReceiver -> h
     android.content.ComponentName mButtonReceiver -> i
     boolean $assertionsDisabled -> j
-    org.kreed.vanilla.MediaButtonHandler getInstance(android.content.Context) -> a
+    com.nachiket.titan.MediaButtonHandler getInstance(android.content.Context) -> a
     void reloadPreference(android.content.Context) -> b
     boolean useHeadsetControls(android.content.Context) -> c
     void setInCall(boolean) -> a
@@ -229,28 +229,28 @@ org.kreed.vanilla.MediaButtonHandler -> org.kreed.vanilla.i:
     boolean process(android.content.Intent) -> a
     void registerMediaButton() -> a
     void unregisterMediaButton() -> b
-org.kreed.vanilla.MediaButtonReceiver -> org.kreed.vanilla.MediaButtonReceiver:
+com.nachiket.titan.MediaButtonReceiver -> com.nachiket.titan.MediaButtonReceiver:
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-org.kreed.vanilla.MediaUtils -> org.kreed.vanilla.j:
+com.nachiket.titan.MediaUtils -> com.nachiket.titan.j:
     java.util.Random sRandom -> a
     long[] sAllSongs -> b
     int sAllSongsIdx -> c
-    org.kreed.vanilla.Song[] sRandomCache -> d
+    com.nachiket.titan.Song[] sRandomCache -> d
     int sRandomCacheIdx -> e
     int sRandomCacheEnd -> f
     int sSongCount -> g
     boolean $assertionsDisabled -> h
     java.util.Random getRandom() -> b
-    org.kreed.vanilla.QueryTask buildGenreQuery(long,java.lang.String[],java.lang.String,java.lang.String[]) -> a
-    org.kreed.vanilla.QueryTask buildQuery(int,long,java.lang.String[],java.lang.String) -> a
+    com.nachiket.titan.QueryTask buildGenreQuery(long,java.lang.String[],java.lang.String,java.lang.String[]) -> a
+    com.nachiket.titan.QueryTask buildQuery(int,long,java.lang.String[],java.lang.String) -> a
     long queryGenreForSong(android.content.ContentResolver,long) -> a
     void shuffle(long[]) -> a
-    void shuffle(org.kreed.vanilla.Song[],int) -> a
+    void shuffle(com.nachiket.titan.Song[],int) -> a
     void shuffle(java.util.List,boolean) -> a
     boolean isSongAvailable(android.content.ContentResolver) -> a
     void onMediaChange() -> a
-    org.kreed.vanilla.Song randomSong(android.content.ContentResolver) -> b
-org.kreed.vanilla.MediaView -> org.kreed.vanilla.k:
+    com.nachiket.titan.Song randomSong(android.content.ContentResolver) -> b
+com.nachiket.titan.MediaView -> com.nachiket.titan.k:
     android.graphics.Bitmap sExpander -> a
     android.graphics.Paint sPaint -> b
     android.graphics.DashPathEffect sDashEffect -> c
@@ -274,16 +274,16 @@ org.kreed.vanilla.MediaView -> org.kreed.vanilla.k:
     void updateMedia(android.database.Cursor,boolean) -> a
     boolean isHeader() -> e
     boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
-org.kreed.vanilla.MiniPlaybackActivity -> org.kreed.vanilla.MiniPlaybackActivity:
+com.nachiket.titan.MiniPlaybackActivity -> com.nachiket.titan.MiniPlaybackActivity:
     void onCreate(android.os.Bundle) -> onCreate
     void onClick(android.view.View) -> onClick
-org.kreed.vanilla.MiniPlaybackActivityLayout -> org.kreed.vanilla.MiniPlaybackActivityLayout:
+com.nachiket.titan.MiniPlaybackActivityLayout -> com.nachiket.titan.MiniPlaybackActivityLayout:
     int mCoverSize -> a
     void onMeasure(int,int) -> onMeasure
     void onLayout(boolean,int,int,int,int) -> onLayout
-org.kreed.vanilla.MusicAlphabetIndexer -> org.kreed.vanilla.l:
+com.nachiket.titan.MusicAlphabetIndexer -> com.nachiket.titan.l:
     int compare(java.lang.String,java.lang.String) -> compare
-org.kreed.vanilla.NewPlaylistDialog -> org.kreed.vanilla.m:
+com.nachiket.titan.NewPlaylistDialog -> com.nachiket.titan.m:
     android.widget.Button mPositiveButton -> a
     android.widget.EditText mText -> b
     boolean mAccepted -> c
@@ -298,21 +298,21 @@ org.kreed.vanilla.NewPlaylistDialog -> org.kreed.vanilla.m:
     void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
     boolean isAccepted() -> c
     void onClick(android.view.View) -> onClick
-org.kreed.vanilla.OneCellWidget -> org.kreed.vanilla.OneCellWidget:
+com.nachiket.titan.OneCellWidget -> com.nachiket.titan.OneCellWidget:
     boolean sEnabled -> a
     void onEnabled(android.content.Context) -> onEnabled
     void onDisabled(android.content.Context) -> onDisabled
     void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
     void checkEnabled(android.content.Context,android.appwidget.AppWidgetManager) -> a
-    void updateWidget(android.content.Context,android.appwidget.AppWidgetManager,org.kreed.vanilla.Song,int) -> a
-org.kreed.vanilla.PlaybackActivity -> org.kreed.vanilla.PlaybackActivity:
+    void updateWidget(android.content.Context,android.appwidget.AppWidgetManager,com.nachiket.titan.Song,int) -> a
+com.nachiket.titan.PlaybackActivity -> com.nachiket.titan.PlaybackActivity:
     int mUpAction -> f
     int mDownAction -> g
     int mCoverPressAction -> h
     int mCoverLongPressAction -> i
     android.os.Handler mHandler -> a
     android.os.Looper mLooper -> b
-    org.kreed.vanilla.CoverView mCoverView -> c
+    com.nachiket.titan.CoverView mCoverView -> c
     android.widget.ImageButton mPlayPauseButton -> d
     int mState -> e
     long mLastStateEvent -> j
@@ -331,10 +331,10 @@ org.kreed.vanilla.PlaybackActivity -> org.kreed.vanilla.PlaybackActivity:
     void onStateChange(int,int) -> a
     void setState(int) -> b
     void setState(long,int) -> a
-    void onSongChange(org.kreed.vanilla.Song) -> a
-    void setSong(org.kreed.vanilla.Song) -> b
-    void setSong(long,org.kreed.vanilla.Song) -> a
-    void replaceSong(int,org.kreed.vanilla.Song) -> a
+    void onSongChange(com.nachiket.titan.Song) -> a
+    void setSong(com.nachiket.titan.Song) -> b
+    void setSong(long,com.nachiket.titan.Song) -> a
+    void replaceSong(int,com.nachiket.titan.Song) -> a
     void onMediaChange() -> e
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
@@ -348,18 +348,18 @@ org.kreed.vanilla.PlaybackActivity -> org.kreed.vanilla.PlaybackActivity:
     void performAction(int) -> a
     void upSwipe() -> c
     void downSwipe() -> d
-org.kreed.vanilla.PlaybackActivity$1 -> org.kreed.vanilla.n:
+com.nachiket.titan.PlaybackActivity$1 -> com.nachiket.titan.n:
     int val$state -> a
     int val$toggled -> b
-    org.kreed.vanilla.PlaybackActivity this$0 -> c
+    com.nachiket.titan.PlaybackActivity this$0 -> c
     void run() -> run
-org.kreed.vanilla.PlaybackActivity$2 -> org.kreed.vanilla.o:
-    org.kreed.vanilla.Song val$song -> a
-    org.kreed.vanilla.PlaybackActivity this$0 -> b
+com.nachiket.titan.PlaybackActivity$2 -> com.nachiket.titan.o:
+    com.nachiket.titan.Song val$song -> a
+    com.nachiket.titan.PlaybackActivity this$0 -> b
     void run() -> run
-org.kreed.vanilla.PlaybackService -> org.kreed.vanilla.PlaybackService:
+com.nachiket.titan.PlaybackService -> com.nachiket.titan.PlaybackService:
     java.lang.Object sWait -> e
-    org.kreed.vanilla.PlaybackService sInstance -> f
+    com.nachiket.titan.PlaybackService sInstance -> f
     java.util.ArrayList sActivities -> g
     android.content.SharedPreferences sSettings -> h
     boolean mHeadsetPause -> a
@@ -377,14 +377,14 @@ org.kreed.vanilla.PlaybackService -> org.kreed.vanilla.PlaybackService:
     android.os.PowerManager$WakeLock mWakeLock -> t
     android.app.NotificationManager mNotificationManager -> u
     android.media.AudioManager mAudioManager -> v
-    org.kreed.vanilla.SongTimeline mTimeline -> w
+    com.nachiket.titan.SongTimeline mTimeline -> w
     int mState -> b
-    org.kreed.vanilla.Song mCurrentSong -> x
+    com.nachiket.titan.Song mCurrentSong -> x
     java.lang.Object mStateLock -> c
     boolean mPlayingBeforeCall -> d
     int mPendingSeek -> y
-    org.kreed.vanilla.PlaybackService$Receiver mReceiver -> z
-    org.kreed.vanilla.PlaybackService$InCallListener mCallListener -> A
+    com.nachiket.titan.PlaybackService$Receiver mReceiver -> z
+    com.nachiket.titan.PlaybackService$InCallListener mCallListener -> A
     java.lang.String mErrorMessage -> B
     float mUserVolume -> C
     float mCurrentVolume -> D
@@ -397,16 +397,16 @@ org.kreed.vanilla.PlaybackService -> org.kreed.vanilla.PlaybackService:
     int unsetFlag$134621() -> a
     boolean isSpeakerOn() -> p
     int updateState(int) -> f
-    void broadcastChange(int,org.kreed.vanilla.Song,long) -> a
+    void broadcastChange(int,com.nachiket.titan.Song,long) -> a
     void updateNotification() -> q
     int playPause() -> b
     int toggleRandom() -> c
     int cycleRepeat() -> d
     int cycleShuffle() -> e
-    org.kreed.vanilla.Song setCurrentSong(int) -> g
+    com.nachiket.titan.Song setCurrentSong(int) -> g
     void onCompletion(android.media.MediaPlayer) -> onCompletion
     boolean onError(android.media.MediaPlayer,int,int) -> onError
-    org.kreed.vanilla.Song getSong(int) -> b
+    com.nachiket.titan.Song getSong(int) -> b
     void go(int,boolean) -> a
     void onMediaChange() -> f
     void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
@@ -415,50 +415,50 @@ org.kreed.vanilla.PlaybackService -> org.kreed.vanilla.PlaybackService:
     int getPosition() -> h
     void seekToProgress(int) -> c
     android.os.IBinder onBind(android.content.Intent) -> onBind
-    void activeSongReplaced(int,org.kreed.vanilla.Song) -> a
+    void activeSongReplaced(int,com.nachiket.titan.Song) -> a
     int deleteMedia(int,long) -> a
-    org.kreed.vanilla.Song nextSong() -> i
-    org.kreed.vanilla.Song previousSong() -> j
+    com.nachiket.titan.Song nextSong() -> i
+    com.nachiket.titan.Song previousSong() -> j
     void userActionTriggered() -> k
-    void addSongs(int,org.kreed.vanilla.QueryTask) -> a
+    void addSongs(int,com.nachiket.titan.QueryTask) -> a
     void enqueueFromCurrent(int) -> d
     void clearQueue() -> l
     java.lang.String getErrorMessage() -> m
     void timelineChanged() -> n
-    org.kreed.vanilla.PlaybackService get(android.content.Context) -> b
+    com.nachiket.titan.PlaybackService get(android.content.Context) -> b
     boolean hasInstance() -> o
-    void addActivity(org.kreed.vanilla.PlaybackActivity) -> a
-    void removeActivity(org.kreed.vanilla.PlaybackActivity) -> b
+    void addActivity(com.nachiket.titan.PlaybackActivity) -> a
+    void removeActivity(com.nachiket.titan.PlaybackActivity) -> b
     int loadState() -> r
     void saveState(int) -> h
     int shuffleMode(int) -> e
-    boolean access$000(org.kreed.vanilla.PlaybackService) -> a
-    boolean access$100(org.kreed.vanilla.PlaybackService) -> b
-    boolean access$102$509109ab(org.kreed.vanilla.PlaybackService) -> c
-org.kreed.vanilla.PlaybackService$1 -> org.kreed.vanilla.p:
-    org.kreed.vanilla.PlaybackService this$0 -> a
+    boolean access$000(com.nachiket.titan.PlaybackService) -> a
+    boolean access$100(com.nachiket.titan.PlaybackService) -> b
+    boolean access$102$509109ab(com.nachiket.titan.PlaybackService) -> c
+com.nachiket.titan.PlaybackService$1 -> com.nachiket.titan.p:
+    com.nachiket.titan.PlaybackService this$0 -> a
     void onChange(boolean) -> onChange
-org.kreed.vanilla.PlaybackService$InCallListener -> org.kreed.vanilla.q:
-    org.kreed.vanilla.PlaybackService this$0 -> a
+com.nachiket.titan.PlaybackService$InCallListener -> com.nachiket.titan.q:
+    com.nachiket.titan.PlaybackService this$0 -> a
     void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
-org.kreed.vanilla.PlaybackService$Receiver -> org.kreed.vanilla.r:
-    org.kreed.vanilla.PlaybackService this$0 -> a
+com.nachiket.titan.PlaybackService$Receiver -> com.nachiket.titan.r:
+    com.nachiket.titan.PlaybackService this$0 -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-org.kreed.vanilla.PreferencesActivity -> org.kreed.vanilla.PreferencesActivity:
+com.nachiket.titan.PreferencesActivity -> com.nachiket.titan.PreferencesActivity:
     void onCreate(android.os.Bundle) -> onCreate
-org.kreed.vanilla.QueryTask -> org.kreed.vanilla.s:
+com.nachiket.titan.QueryTask -> com.nachiket.titan.s:
     android.net.Uri mUri -> a
     java.lang.String[] mProjection -> b
     java.lang.String mSelection -> c
     java.lang.String[] mSelectionArgs -> d
     java.lang.String mSortOrder -> e
     android.database.Cursor runQuery(android.content.ContentResolver) -> a
-org.kreed.vanilla.Song -> org.kreed.vanilla.t:
+com.nachiket.titan.Song -> com.nachiket.titan.t:
     java.lang.String[] EMPTY_PROJECTION -> a
     java.lang.String[] FILLED_PROJECTION -> b
     java.lang.String[] EMPTY_PLAYLIST_PROJECTION -> c
     java.lang.String[] FILLED_PLAYLIST_PROJECTION -> d
-    org.kreed.vanilla.Cache mCoverCache -> o
+    com.nachiket.titan.Cache mCoverCache -> o
     boolean mDisableCoverArt -> e
     long id -> f
     long albumId -> g
@@ -473,34 +473,34 @@ org.kreed.vanilla.Song -> org.kreed.vanilla.t:
     android.graphics.BitmapFactory$Options BITMAP_OPTIONS -> q
     boolean isRandom() -> a
     void populate(android.database.Cursor) -> a
-    long getId(org.kreed.vanilla.Song) -> a
+    long getId(com.nachiket.titan.Song) -> a
     android.graphics.Bitmap getCover(android.content.Context) -> a
     android.net.Uri getCoverUri() -> b
     java.lang.String toString() -> toString
     int compareTo(java.lang.Object) -> compareTo
-org.kreed.vanilla.SongNotification -> org.kreed.vanilla.SongNotification:
-org.kreed.vanilla.SongTimeline -> org.kreed.vanilla.u:
+com.nachiket.titan.SongNotification -> com.nachiket.titan.SongNotification:
+com.nachiket.titan.SongTimeline -> com.nachiket.titan.u:
     android.content.Context mContext -> a
     java.util.ArrayList mSongs -> b
     int mCurrentPos -> c
     int mShuffleMode -> d
     int mFinishAction -> e
     java.util.ArrayList mShuffledSongs -> f
-    org.kreed.vanilla.Song mSavedPrevious -> g
-    org.kreed.vanilla.Song mSavedCurrent -> h
-    org.kreed.vanilla.Song mSavedNext -> i
-    org.kreed.vanilla.SongTimeline$Callback mCallback -> j
+    com.nachiket.titan.Song mSavedPrevious -> g
+    com.nachiket.titan.Song mSavedCurrent -> h
+    com.nachiket.titan.Song mSavedNext -> i
+    com.nachiket.titan.SongTimeline$Callback mCallback -> j
     boolean $assertionsDisabled -> k
     void readState(java.io.DataInputStream) -> a
     void writeState(java.io.DataOutputStream) -> a
-    void setCallback(org.kreed.vanilla.SongTimeline$Callback) -> a
+    void setCallback(com.nachiket.titan.SongTimeline$Callback) -> a
     int getShuffleMode() -> a
     int getFinishAction() -> b
     void setShuffleMode(int) -> a
     void setFinishAction(int) -> b
-    org.kreed.vanilla.Song shuffleAll() -> f
-    org.kreed.vanilla.Song getSong(int) -> c
-    org.kreed.vanilla.Song shiftCurrentSong(int) -> d
+    com.nachiket.titan.Song shuffleAll() -> f
+    com.nachiket.titan.Song getSong(int) -> c
+    com.nachiket.titan.Song shiftCurrentSong(int) -> d
     int addSongs(int,android.database.Cursor) -> a
     void purge() -> c
     void clearQueue() -> d
@@ -509,14 +509,14 @@ org.kreed.vanilla.SongTimeline -> org.kreed.vanilla.u:
     void removeSong(long) -> a
     void changed() -> i
     boolean isEndOfQueue() -> e
-org.kreed.vanilla.SongTimeline$Callback -> org.kreed.vanilla.v:
-    void activeSongReplaced(int,org.kreed.vanilla.Song) -> a
+com.nachiket.titan.SongTimeline$Callback -> com.nachiket.titan.v:
+    void activeSongReplaced(int,com.nachiket.titan.Song) -> a
     void timelineChanged() -> n
-org.kreed.vanilla.SongTimeline$FlagComparator -> org.kreed.vanilla.w:
+com.nachiket.titan.SongTimeline$FlagComparator -> com.nachiket.titan.w:
     int compare(java.lang.Object,java.lang.Object) -> compare
-org.kreed.vanilla.SongTimeline$IdComparator -> org.kreed.vanilla.x:
+com.nachiket.titan.SongTimeline$IdComparator -> com.nachiket.titan.x:
     int compare(java.lang.Object,java.lang.Object) -> compare
-org.kreed.vanilla.VolumePreference -> org.kreed.vanilla.VolumePreference:
+com.nachiket.titan.VolumePreference -> com.nachiket.titan.VolumePreference:
     void onPrepareDialogBuilder(android.app.AlertDialog$Builder) -> onPrepareDialogBuilder
     void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
     void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
