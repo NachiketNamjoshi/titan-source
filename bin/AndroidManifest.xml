@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.nachiket.titan"
+	android:versionName="0.1"
+	android:versionCode="1"
+	android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="15" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<!-- This is needed for isWiredHeadsetOn() to work in some cases. (bug?) -->
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<application
+		android:icon="@drawable/icon"
+		android:label="@string/app_name"
+		android:backupAgent="PreferencesBackupAgent">
+		<activity
+			android:name="FullPlaybackActivity"
+			android:theme="@style/Playback"
+			android:launchMode="singleTask" />
+		<activity
+			android:name="LibraryActivity"
+			android:theme="@style/Library"
+			android:uiOptions="splitActionBarWhenNarrow"
+			android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="PlaylistActivity"
+			android:launchMode="singleTask"
+			android:theme="@style/BackActionBar" />
+		<activity
+			android:name="MiniPlaybackActivity"
+			android:theme="@style/Dialog"
+			android:excludeFromRecents="true"
+			android:launchMode="singleInstance" />
+		<receiver
+			android:name=".OneCellWidget"
+			android:label="Titan Music 1x1">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/one_cell_widget" />
+		</receiver>
+		<receiver
+			android:name=".FourLongWidget"
+			android:label="Titan Music 4x1 A">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/four_long_widget" />
+		</receiver>
+		<receiver
+			android:name=".FourWhiteWidget"
+			android:label="Titan Music 4x1 White">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/four_white_widget" />
+		</receiver>
+		<receiver
+			android:name=".WidgetE"
+			android:label="Titan Music 4x1 B">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/widget_e" />
+		</receiver>
+		<receiver
+			android:name=".FourSquareWidget"
+			android:label="Titan Music 2x2 A">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/four_square_widget" />
+		</receiver>
+		<receiver
+			android:name=".WidgetD"
+			android:label="Titan Music 2x2 B">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/widget_d" />
+		</receiver>
+		<receiver android:name="MediaButtonReceiver" >
+			<intent-filter android:priority="999">
+				<action android:name="android.intent.action.MEDIA_BUTTON" />
+			</intent-filter>
+		</receiver>
+		<service android:name="PlaybackService">
+			<intent-filter>
+				<action android:name="com.nachiket.titan.action.PLAY" />
+				<action android:name="com.nachiket.titan.action.PAUSE" />
+				<action android:name="com.nachiket.titan.action.TOGGLE_PLAYBACK" />
+				<action android:name="com.nachiket.titan.action.NEXT_SONG" />
+				<action android:name="com.nachiket.titan.action.PREVIOUS_SONG" />
+			</intent-filter>
+		</service>
+		<activity
+			android:name="PreferencesActivity"
+			android:theme="@style/BackActionBar" />
+		<activity android:name="PreferencesActivity$AudioActivity" />
+		<activity android:name="PreferencesActivity$PlaybackActivity" />
+		<activity android:name="PreferencesActivity$LibraryActivity" />
+		<activity android:name="PreferencesActivity$NotificationsActivity" />
+		<activity android:name="PreferencesActivity$ShakeActivity" />
+		<activity android:name="PreferencesActivity$MiscActivity" />
+		<activity android:name="PreferencesActivity$AboutActivity" />
+		<activity
+			android:name="TabOrderActivity"
+			android:theme="@style/BackActionBar" />
+		<meta-data
+			android:name="com.google.android.backup.api_key"
+			android:value="AEdPqrEAAAAIH6Xcxa4hn6sHN1m4jMpi4MFFFMP5sv3XhFuWeA" />
+		
+		<activity android:label="Equalizer" android:name="com.nachiket.titan.equalizer.activity.Equalizer">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+
+		<activity android:name="com.nachiket.titan.equalizer.activity.EqualizerScreen">
+			<intent-filter>
+				<action android:name="com.nachiket.titan.equalizer.HEADSET" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.nachiket.titan.equalizer.SPEAKER" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.nachiket.titan.equalizer.BLUETOOTH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<service android:exported="false" android:enabled="true"
+			android:name="com.nachiket.titan.equalizer.HeadsetService">
+			<intent-filter>
+				<action android:name="com.nachiket.titan.equalizer.HEADSET_SERVICE"/>
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</service>
+
+		<receiver android:name="com.nachiket.titan.equalizer.ServiceLaunchReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</receiver>
+	</application>
+</manifest>

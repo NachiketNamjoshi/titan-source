@@ -1,0 +1,265 @@
+android.support.v4.util.LruCache:
+    private int putCount
+    116:135:public final java.lang.Object put(java.lang.Object,java.lang.Object)
+    174:190:public final java.lang.Object remove(java.lang.Object)
+    252:253:public final void evictAll()
+    261:261:public final synchronized int size()
+    270:270:public final synchronized int maxSize()
+    277:277:public final synchronized int hitCount()
+    285:285:public final synchronized int missCount()
+    292:292:public final synchronized int createCount()
+    299:299:public final synchronized int putCount()
+    306:306:public final synchronized int evictionCount()
+    314:314:public final synchronized java.util.Map snapshot()
+android.support.v4.view.PagerAdapter:
+    public static final int POSITION_UNCHANGED
+    public static final int POSITION_NONE
+android.support.v4.view.ViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int INVALID_POINTER
+    private long mFakeDragBeginTime
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    346:347:void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener)
+    450:452:android.support.v4.view.ViewPager$OnPageChangeListener setInternalPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    463:463:public int getOffscreenPageLimit()
+    484:493:public void setOffscreenPageLimit(int)
+    504:511:public void setPageMargin(int)
+    519:519:public int getPageMargin()
+    528:532:public void setPageMarginDrawable(android.graphics.drawable.Drawable)
+    540:541:public void setPageMarginDrawable(int)
+    574:575:void smoothScrollTo(int,int)
+    1651:1667:public boolean beginFakeDrag()
+    1677:1700:public void endFakeDrag()
+    1710:1738:public void fakeDragBy(float)
+    1750:1750:public boolean isFakeDragging()
+com.nachiket.titan.Action:
+    1:1:public static com.nachiket.titan.Action valueOf(java.lang.String)
+com.nachiket.titan.BuildConfig
+com.nachiket.titan.CompatFroyo:
+    97:97:public static float getYVelocity(android.view.VelocityTracker,int)
+com.nachiket.titan.CompatHoneycomb:
+    41:41:public CompatHoneycomb()
+com.nachiket.titan.CompatIcs:
+    39:39:public CompatIcs()
+com.nachiket.titan.CoverBitmap:
+    public static final int STYLE_OVERLAPPING_BOX
+    public static final int STYLE_INFO_BELOW
+    public static final int STYLE_NO_INFO
+    42:42:public CoverBitmap()
+com.nachiket.titan.CoverView:
+    private static final int MSG_GENERATE_BITMAP
+    private static final int MSG_LONG_CLICK
+    private static final int MSG_SCROLL
+com.nachiket.titan.DragListView:
+    private static final int MSG_SCROLL
+    public static final int ROW_HEIGHT
+    public static final int PADDING
+    public static final int DRAG_COLOR
+com.nachiket.titan.DragListView$DragAdapter:
+    public abstract void remove(int)
+com.nachiket.titan.FullPlaybackActivity:
+    public static final int DISPLAY_INFO_OVERLAP
+    public static final int DISPLAY_INFO_BELOW
+    public static final int DISPLAY_INFO_WIDGETS
+    private static final int MSG_UPDATE_PROGRESS
+    private static final int MSG_SAVE_CONTROLS
+    private static final int MSG_LOAD_EXTRA_INFO
+    private static final int MSG_COMMIT_INFO
+    private static final int MSG_UPDATE_POSITION
+com.nachiket.titan.IdlePreference:
+    private static final int DEFAULT_VALUE
+    private static final int MIN
+    private static final int MAX
+com.nachiket.titan.LibraryActivity:
+    public static final int ACTION_PLAY
+    public static final int ACTION_ENQUEUE
+    public static final int ACTION_LAST_USED
+    public static final int ACTION_PLAY_ALL
+    public static final int ACTION_ENQUEUE_ALL
+    public static final int ACTION_DO_NOTHING
+    public static final int ACTION_EXPAND
+    public static final int ACTION_PLAY_OR_ENQUEUE
+    private static final java.lang.String SEARCH_BOX_VISIBLE
+    private static final int MENU_PLAY
+    private static final int MENU_ENQUEUE
+    private static final int MENU_EXPAND
+    private static final int MENU_ADD_TO_PLAYLIST
+    private static final int MENU_NEW_PLAYLIST
+    private static final int MENU_DELETE
+    private static final int MENU_RENAME_PLAYLIST
+    private static final int MENU_SELECT_PLAYLIST
+    private static final int MENU_PLAY_ALL
+    private static final int MENU_ENQUEUE_ALL
+    private static final int MENU_MORE_FROM_ALBUM
+    private static final int MENU_MORE_FROM_ARTIST
+    private static final int MSG_NEW_PLAYLIST
+    private static final int MSG_DELETE
+    private static final int MSG_RENAME_PLAYLIST
+    private static final int MSG_ADD_TO_PLAYLIST
+    private static final int MSG_SAVE_PAGE
+com.nachiket.titan.LibraryAdapter:
+    public static final java.lang.String DATA_ID
+    public static final long HEADER_ID
+    public static final long INVALID_ID
+    public static final java.lang.String DATA_TITLE
+    public static final java.lang.String DATA_TYPE
+    public static final java.lang.String DATA_FILE
+    public static final java.lang.String DATA_EXPANDABLE
+    public abstract void setLimiter(com.nachiket.titan.Limiter)
+com.nachiket.titan.LibraryPagerAdapter:
+    public static final int MAX_ADAPTER_COUNT
+    private static final int MSG_RUN_QUERY
+    private static final int MSG_SAVE_SORT
+    private static final int MSG_REQUEST_REQUERY
+    private static final int MSG_COMMIT_QUERY
+com.nachiket.titan.Limiter:
+    private static final long serialVersionUID
+com.nachiket.titan.MediaButtonReceiver:
+    private static final int DOUBLE_CLICK_DELAY
+com.nachiket.titan.MediaUtils:
+    public static final int TYPE_INVALID
+    public static final int TYPE_ARTIST
+    public static final int TYPE_ALBUM
+    public static final int TYPE_SONG
+    public static final int TYPE_PLAYLIST
+    public static final int TYPE_GENRE
+    public static final int TYPE_FILE
+    public static final int TYPE_COUNT
+    public static final java.lang.String DEFAULT_SORT
+    private static final int RANDOM_POPULATE_SIZE
+    41:41:public MediaUtils()
+com.nachiket.titan.PlaybackActivity:
+    static final int MENU_SORT
+    static final int MENU_PREFS
+    static final int MENU_LIBRARY
+    static final int MENU_PLAYBACK
+    static final int MENU_SEARCH
+    static final int MENU_ENQUEUE_ALBUM
+    static final int MENU_ENQUEUE_ARTIST
+    static final int MENU_ENQUEUE_GENRE
+    static final int MENU_CLEAR_QUEUE
+    static final int MENU_TOGGLE_CONTROLS
+    private static final int GROUP_SHUFFLE
+    private static final int GROUP_FINISH
+com.nachiket.titan.PlaybackService:
+    private static final java.lang.String STATE_FILE
+    private static final long STATE_FILE_MAGIC
+    private static final int STATE_VERSION
+    private static final int NOTIFICATION_ID
+    public static final java.lang.String ACTION_TOGGLE_PLAYBACK
+    public static final java.lang.String ACTION_PLAY
+    public static final java.lang.String ACTION_PAUSE
+    public static final java.lang.String ACTION_TOGGLE_PLAYBACK_DELAYED
+    public static final java.lang.String ACTION_TOGGLE_PLAYBACK_NOTIFICATION
+    public static final java.lang.String ACTION_NEXT_SONG
+    public static final java.lang.String ACTION_NEXT_SONG_DELAYED
+    public static final java.lang.String ACTION_NEXT_SONG_AUTOPLAY
+    public static final java.lang.String ACTION_PREVIOUS_SONG
+    public static final java.lang.String ACTION_PREVIOUS_SONG_AUTOPLAY
+    public static final java.lang.String ACTION_CYCLE_SHUFFLE
+    public static final java.lang.String ACTION_CYCLE_REPEAT
+    public static final java.lang.String ACTION_CLOSE_NOTIFICATION
+    public static final int NEVER
+    public static final int WHEN_PLAYING
+    public static final int ALWAYS
+    private static final int NOT_ACTION_MAIN_ACTIVITY
+    private static final int NOT_ACTION_MINI_ACTIVITY
+    private static final int NOT_ACTION_NEXT_SONG
+    private static final long IDLE_GRACE_PERIOD
+    private static final int MIN_SHAKE_PERIOD
+    private static final int WAKE_LOCK_DELAY
+    public static final int FLAG_PLAYING
+    public static final int FLAG_NO_MEDIA
+    public static final int FLAG_ERROR
+    public static final int FLAG_EMPTY_QUEUE
+    public static final int SHIFT_FINISH
+    public static final int MASK_FINISH
+    public static final int SHIFT_SHUFFLE
+    public static final int MASK_SHUFFLE
+    private static final int RELEASE_WAKE_LOCK
+    private static final int QUERY
+    private static final int IDLE_TIMEOUT
+    private static final int FADE_OUT
+    private static final int CALL_GO
+    private static final int BROADCAST_CHANGE
+    private static final int SAVE_STATE
+    private static final int PROCESS_SONG
+    private static final int PROCESS_STATE
+com.nachiket.titan.Playlist:
+    35:35:public Playlist()
+com.nachiket.titan.PlaylistActivity:
+    private static final int MENU_PLAY
+    private static final int MENU_PLAY_ALL
+    private static final int MENU_ENQUEUE
+    private static final int MENU_ENQUEUE_ALL
+    private static final int MENU_REMOVE
+com.nachiket.titan.PlaylistAdapter:
+    public static final int MSG_RUN_QUERY
+    public static final int MSG_UPDATE_CURSOR
+com.nachiket.titan.PrefKeys
+com.nachiket.titan.PreferencesActivity$AboutFragment
+com.nachiket.titan.PreferencesActivity$AudioFragment
+com.nachiket.titan.PreferencesActivity$LibraryFragment
+com.nachiket.titan.PreferencesActivity$MiscFragment
+com.nachiket.titan.PreferencesActivity$NotificationsFragment
+com.nachiket.titan.PreferencesActivity$PlaybackFragment
+com.nachiket.titan.PreferencesActivity$ShakeFragment
+com.nachiket.titan.PreferencesBackupAgent:
+    private static final java.lang.String BACKUP_KEY
+com.nachiket.titan.R
+com.nachiket.titan.R$array
+com.nachiket.titan.R$attr
+com.nachiket.titan.R$color
+com.nachiket.titan.R$drawable
+com.nachiket.titan.R$id
+com.nachiket.titan.R$layout
+com.nachiket.titan.R$menu
+com.nachiket.titan.R$plurals
+com.nachiket.titan.R$raw
+com.nachiket.titan.R$string
+com.nachiket.titan.R$style
+com.nachiket.titan.R$xml
+com.nachiket.titan.Song:
+    public static final int FLAG_RANDOM
+    public static final int FLAG_NO_COVER
+    public static final int FLAG_COUNT
+com.nachiket.titan.SongTimeline:
+    public static final int FINISH_STOP
+    public static final int FINISH_REPEAT
+    public static final int FINISH_REPEAT_CURRENT
+    public static final int FINISH_STOP_CURRENT
+    public static final int FINISH_RANDOM
+    public static final int MODE_PLAY
+    public static final int MODE_PLAY_NEXT
+    public static final int MODE_ENQUEUE
+    public static final int MODE_PLAY_POS_FIRST
+    public static final int MODE_PLAY_ID_FIRST
+    public static final int MODE_ENQUEUE_ID_FIRST
+    public static final int MODE_ENQUEUE_POS_FIRST
+    public static final int SHUFFLE_NONE
+    public static final int SHUFFLE_SONGS
+    public static final int SHUFFLE_ALBUMS
+    public static final int SHIFT_PREVIOUS_ALBUM
+    public static final int SHIFT_PREVIOUS_SONG
+    public static final int SHIFT_NEXT_SONG
+    public static final int SHIFT_NEXT_ALBUM
+com.nachiket.titan.TabOrderAdapter:
+    92:92:public void remove(int)
+com.nachiket.titan.equalizer.HeadsetService:
+    public static final java.lang.String NAME
+com.nachiket.titan.equalizer.activity.Equalizer:
+    public static final java.lang.String SHARED_PREFERENCES_BASENAME
+    public static final java.lang.String ACTION_UPDATE_PREFERENCES
+    public static final int NOTIFY_FOREGROUND_ID
+com.nachiket.titan.equalizer.preference.Complex:
+    31:31:protected float theta()
+com.nachiket.titan.equalizer.preference.EqualizerSurface:
+    public static final float CURVE_RESOLUTION
+    85:85:public float getBand(int)

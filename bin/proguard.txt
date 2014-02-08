@@ -1,0 +1,142 @@
+# view res/layout/library_content.xml #generated:29
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/actionbar_controls.xml #generated:23
+-keep class com.nachiket.titan.ActionBarControls { <init>(...); }
+
+# view res/layout/full_playback.xml #generated:24
+# view res/layout/full_playback_alt.xml #generated:24
+# view res/layout/mini_playback.xml #generated:28
+-keep class com.nachiket.titan.CoverView { <init>(...); }
+
+# view res/layout/playlist_activity.xml #generated:23
+# view res/layout/tab_order.xml #generated:30
+-keep class com.nachiket.titan.DragListView { <init>(...); }
+
+# view res/layout/playlist_row.xml #generated:23
+# view res/layout/tab_order_row.xml #generated:23
+-keep class com.nachiket.titan.DragTextView { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.nachiket.titan.FourLongWidget { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.nachiket.titan.FourSquareWidget { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.nachiket.titan.FourWhiteWidget { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class com.nachiket.titan.FullPlaybackActivity { <init>(...); }
+
+# view res/xml/preference_misc.xml #generated:36
+-keep class com.nachiket.titan.IdlePreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.nachiket.titan.LibraryActivity { <init>(...); }
+
+# view res/xml/preference_library.xml #generated:38
+# view res/xml/preference_library.xml #generated:44
+# view res/xml/preference_notifications.xml #generated:26
+# view res/xml/preference_notifications.xml #generated:32
+# view res/xml/preference_playback.xml #generated:31
+# view res/xml/preference_playback.xml #generated:37
+# view res/xml/preference_playback.xml #generated:43
+# view res/xml/preference_playback.xml #generated:49
+# view res/xml/preference_playback.xml #generated:55
+# view res/xml/preference_shake.xml #generated:31
+-keep class com.nachiket.titan.ListPreferenceSummary { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.nachiket.titan.MediaButtonReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.nachiket.titan.MiniPlaybackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.nachiket.titan.OneCellWidget { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class com.nachiket.titan.PlaybackService { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.nachiket.titan.PlaylistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.nachiket.titan.PreferencesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.nachiket.titan.PreferencesActivity$AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.nachiket.titan.PreferencesActivity$AudioActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.nachiket.titan.PreferencesActivity$LibraryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.nachiket.titan.PreferencesActivity$MiscActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.nachiket.titan.PreferencesActivity$NotificationsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.nachiket.titan.PreferencesActivity$PlaybackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.nachiket.titan.PreferencesActivity$ShakeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.nachiket.titan.PreferencesBackupAgent { <init>(...); }
+
+# view res/xml/preference_library.xml #generated:50
+-keep class com.nachiket.titan.ScanPreference { <init>(...); }
+
+# view res/xml/preference_audio.xml #generated:26
+# view res/xml/preference_shake.xml #generated:39
+-keep class com.nachiket.titan.SeekBarPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:126
+-keep class com.nachiket.titan.TabOrderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.nachiket.titan.WidgetD { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.nachiket.titan.WidgetE { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.nachiket.titan.equalizer.HeadsetService { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.nachiket.titan.equalizer.ServiceLaunchReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.nachiket.titan.equalizer.activity.Equalizer { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.nachiket.titan.equalizer.activity.EqualizerScreen { <init>(...); }
+
+# view res/xml/bluetooth_preferences.xml #generated:38
+# view res/xml/headset_preferences.xml #generated:38
+# view res/xml/speaker_preferences.xml #generated:31
+-keep class com.nachiket.titan.equalizer.preference.EqualizerPreference { <init>(...); }
+
+# view res/layout/equalizer.xml #generated:5
+# view res/layout/equalizer_popup.xml #generated:5
+-keep class com.nachiket.titan.equalizer.preference.EqualizerSurface { <init>(...); }
+
+# view res/xml/bluetooth_preferences.xml #generated:18
+# view res/xml/bluetooth_preferences.xml #generated:31
+# view res/xml/bluetooth_preferences.xml #generated:39
+# view res/xml/bluetooth_preferences.xml #generated:52
+# view res/xml/bluetooth_preferences.xml #generated:9
+# view res/xml/headset_preferences.xml #generated:18
+# view res/xml/headset_preferences.xml #generated:31
+# view res/xml/headset_preferences.xml #generated:39
+# view res/xml/headset_preferences.xml #generated:52
+# view res/xml/headset_preferences.xml #generated:9
+# view res/xml/speaker_preferences.xml #generated:10
+# view res/xml/speaker_preferences.xml #generated:24
+-keep class com.nachiket.titan.equalizer.preference.SummariedListPreference { <init>(...); }
+
